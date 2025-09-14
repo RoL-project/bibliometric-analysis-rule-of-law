@@ -6,9 +6,6 @@
 ## R version 4.5.0 (2022-10-11) -- "How About a Twenty-Six"
 ## Jaroslaw Kantorowicz and Bastián González-Bustamante
 ## Leiden University and Universidad Diego Portales
-
-## Contact Email
-## b.a.gonzalez.bustamante@fgga.leidenuniv.nl; bastian.gonzalez.b@mail.udp.cl
 ###############################################################################
 
 ###############################################################################
