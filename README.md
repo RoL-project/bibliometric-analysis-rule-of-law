@@ -8,17 +8,15 @@ This repository contains the replication files of the paper "Exploring the Rule 
 
 ## Metadata and Preservation
 
-This repository has been created with Git version control and deposited in Zenodo.
+This repository has been created with Git version control. Below is a brief description of the relevant files in this repository:
 
-Below is a brief description of the relevant files in this repository:
+- **code\functions\clean_authors.R**. An R function that is imported into `stage_1_preprocessing.R` to clean and correct authors' names.
 
-- **code\functions\clean_authors.R**.
+- **code\stage_1_preprocessing.R**. An R script that preprocesses WoS data and saves the dataset using pins package versioning.
 
-- **code\stage_1_preprocessing.R**. R script that preprocesses WoS data.
+- **code\stage_2_descriptives.R**. An R script that generates our descriptive outputs.
 
-- **code\stage_2_descriptives.R**.
-
-- **code\stage_3_topic_modelling**.
+- **code\stage_3_topic_modelling**. An R script that performs topic modelling.
 
 - **README.md**. The main overview of this repository provides metadata, preservation information and instructions for replicating the analyses.
 
@@ -33,6 +31,10 @@ The following files should be run in order to replicate the main results of the 
 - `stage_1_preprocessing.R`
 - `stage_2_descriptives.R`
 - `stage_3_topic_modelling`
+
+We are not able to share the WoS files used in `stage_1_preprocessing.R` to create the bibliographic data frame. This is proprietary data that we were able to access using our institutional subscriptions, however, we are not authorised to release the data.
+
+Nevertheless, you can easily reuse this code by replacing those files with yours. At the end of `stage_1_preprocessing.R`, we provide some lines of code based on the pins package to save a versioned file of the processed dataset. This file can then be imported straightforwardly into `stage_2_descriptives.R` and `stage_3_topic_modelling`.
 
 ## Authors
 
