@@ -32,7 +32,8 @@ The following files should be run in order to replicate the main results of the 
 - `stage_2_descriptives.R`
 - `stage_3_topic_modelling`
 
-We are not able to share the WoS files used in `stage_1_preprocessing.R` to create the bibliographic data frame. This is proprietary data that we were able to access using our institutional subscriptions, however, we are not authorised to release the data.
+> [!CAUTION]
+> We are not able to share the WoS files used in `stage_1_preprocessing.R` to create the bibliographic data frame. These are proprietary data that we were able to access using our institutional subscriptions, however, we are not authorised to release the data.
 
 Nevertheless, you can easily reuse this code by replacing those files with yours. At the end of `stage_1_preprocessing.R`, we provide some lines of code based on the pins package to save a versioned file of the processed dataset. This file can then be imported straightforwardly into `stage_2_descriptives.R` and `stage_3_topic_modelling`.
 
