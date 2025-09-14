@@ -969,6 +969,3 @@ clean_author_names <- function(df) {
   final_df$CR <- gsub("KENNEDY DUNCAN\\.", "KENNEDY D", final_df$CR)
   return(df)
 }
-
-
-
