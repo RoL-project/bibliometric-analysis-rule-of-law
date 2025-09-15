@@ -12,7 +12,7 @@ This repository has been created with Git version control. Below is a brief desc
 
 - **code\functions\clean_authors.R**. An R function that is imported into `stage_1_preprocessing.R` to clean and correct authors' names.
 
-- **code\stage_1_preprocessing.R**. An R script that preprocesses WoS data and saves the dataset using pins package versioning.
+- **code\stage_1_preprocessing.R**. An R script that preprocesses WoS data and saves the dataset using the `pins package` versioning.
 
 - **code\stage_2_descriptives.R**. An R script that generates our descriptive outputs.
 
@@ -33,9 +33,9 @@ The following files should be run in order to replicate the main results of the 
 - `stage_3_topic_modelling`
 
 > [!CAUTION]
-> We are not able to share the WoS files used in `stage_1_preprocessing.R` to create the bibliographic data frame. These are proprietary data that we were able to access using our institutional subscriptions, however, we are not authorised to release the data.
+> We are not able to share the WoS files used in `stage_1_preprocessing.R` to create the bibliographic data frame. Because WoS data are proprietary, we cannot redistribute records and, therefore, cannot guarantee strict data-level reproducibility. Clarivate's license prohibits the redistribution of WoS records, and full public data release is legally impossible. 
 
-Nevertheless, you can easily reuse this code by replacing those files with yours. At the end of `stage_1_preprocessing.R`, we provide some lines of code based on the pins package to save a versioned file of the processed dataset. This file can then be imported straightforwardly into `stage_2_descriptives.R` and `stage_3_topic_modelling`.
+We were able to access WoS records using our institutional subscriptions, however, you can easily reuse this code by replacing those files with yours. At the end of `stage_1_preprocessing.R`, we provide some lines of code based on the `pins package` to save a versioned file of the processed dataset. This file can then be imported straightforwardly into `stage_2_descriptives.R` and `stage_3_topic_modelling`.
 
 ## Authors
 
