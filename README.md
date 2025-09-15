@@ -1,6 +1,6 @@
 # Exploring the Rule of Law in Academic Discourse: Bibliometric Description and Thematic Analysis with the Web of Science Data
 
-## Overivew
+## Overview
 
 This repository contains the replication files of the paper "Exploring the Rule of Law in Academic Discourse: Bibliometric Description and Thematic Analysis with the Web of Science Data."
 
