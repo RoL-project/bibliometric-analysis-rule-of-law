@@ -66,9 +66,6 @@ collection_wos <- c("../data-under-embargo/unravelling-rule-of-law/wos-data/rl1.
 ## Converting WoS collection into a bibliographic dataframe
 preliminary_df <- convert2df(collection_wos, dbsource = "wos", format = "plaintext")
 
-## Check
-table(preliminary_df$DT)
-
 ###############################################################################
 ## 4. Preprocessing
 ###############################################################################
@@ -100,9 +97,6 @@ final_df <- metaTagExtraction(final_df, Field = "AU_CO", sep = ";")
 final_df <- metaTagExtraction(final_df, Field = "AU1_CO", sep = ";")
 final_df <- metaTagExtraction(final_df, Field = "AU_UN", sep = ";")
 final_df <- metaTagExtraction(final_df, Field = "SR", sep = ";")
-
-## Check
-table(final_df$DT)
 
 ## Save data (under embargo)
 pin_write(board_folder("../data-under-embargo/unravelling-rule-of-law/wos-data/"), final_df, name = "final_df", versioned = TRUE)
