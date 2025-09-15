@@ -56,10 +56,6 @@ final_df$Legal <- str_detect(final_df$SC, pattern = "GOVERNMENT & LAW")
 final_df$Philo <- str_detect(final_df$SC, pattern = "PHILOSOPHY")
 final_df$Econ <- str_detect(final_df$SC, pattern = "BUSINESS & ECONOMICS")
 
-## table(final_df$Legal) 
-## le(final_df$Philo)
-## table(final_df$Econ)
-
 final_df <- final_df %>% mutate(LAW = ifelse(Legal == TRUE | Philo == TRUE, "Law & Philosophy", "Other"))
 final_df$LAW <- factor(final_df$LAW, levels = c("Law & Philosophy", "Other"))
 final_df <- final_df %>% drop_na(LAW)
@@ -261,8 +257,6 @@ plot_1 <- plot_model(model_1, type = "int", colors = c("black", "grey")) +
   theme(plot.title = element_text(hjust = 0)) +
   theme(axis.title.x = element_text(vjust = -0.5)) +
   theme(axis.title.y = element_text(vjust = 2.5))
-
-plot_1
 
 ## 2. European contex
 summary(prep, topics = 2)
